@@ -2,11 +2,10 @@
   "name": "beespoke_backend_task",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node --experimental-modules index.js",
+    "dev": "nodemon --experimental-modules index.js"
   },
   "keywords": [],
   "author": "",

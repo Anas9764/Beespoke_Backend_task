@@ -11,3 +11,12 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('user_creds', userSchema);
 
 module.exports = User;
+
+
+// {
+//   "customerName": "John Doe",
+//   "username": "john_doe123",
+//   "password": "securepassword123",
+//   "gender": "Male",
+//   "preferredCategory": "jeans"
+// }  

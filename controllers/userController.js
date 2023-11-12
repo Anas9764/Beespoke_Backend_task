@@ -19,7 +19,6 @@ exports.createUserProfile = async (req, res) => {
       preferredCategory,
     });
 
-    // Save the new user to the database
     await newUser.save();
 
     res.status(201).json({ message: 'User profile created successfully' });

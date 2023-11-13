@@ -24,33 +24,52 @@ MONGO_URL = mongodb+srv://<username>:<password>@cluster0.drr5i1i.mongodb.net/?re
 5. `npm run dev` to start the server in development mode
 
 ## API Endpoints
-
+## Endpoint 1
 ### Method :
+- POST
 
-1) POST
-
-2) GET
 
 ### Endpoint :
 
-1) `/api/user-profile`
-
-2) `/product/product-search?keyword=LOUIS MONARCH`
-
+- `/api/user-profile`
 
 ### Description:
-1) User profile created
-
-2) Product search with keywords
+- User profile create and check already existing in database or not.
 
 ### Payload :
 
-1) `customerName,username,password,gender,preferredCategory`
+- `(customerName,username,password,gender,preferredCategory)`
 
-2)  `keyword, price_min, price_max`
 
 ### Response :
 
-1) `"message": "User profile created successfully"` || `"error": "Username already exists"`
+- `"message": "User profile created successfully"` || `"error": "Username already exists"`
 
-2) `After the key word search, price range filter is applied and then top 10 products will be returned based on rank`
+
+## Endpoint 2
+### Method :
+- GET
+
+### Endpoint :
+- `/product/product-search?keyword=LOUIS MONARCH`
+
+### Description:
+-Product search with keywords and set minimum price and maximum price.
+
+### Payload :
+
+-  `keyword, price_min, price_max`
+
+### Response :
+`After the key word search, price range filter is applied and then top 10 products will be returned based on rank`
+
+## output:
+### Endpoint 1:
+![Output Image](./output_img/1.png)
+
+![Output Image](./output_img/2.png)
+
+### Endpoint 2:
+![Output Image](./output_img/3.png)
+
+![Output Image](./output_img/4.png)
